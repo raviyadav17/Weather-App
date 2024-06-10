@@ -225,3 +225,62 @@ header {
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .left-card,
+  .right-card {
+    width: 90%;
+    min-height: 50vh;
+    border-radius: 2rem;
+  }
+
+  .right-card {
+    width: 90%;
+  }
+
+  .loading {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-card {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .left-card-body {
+    height: 60%;
+  }
+
+  .right-card {
+    order: 2;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .weather-display {
+    width: 100%;
+    display: flex;
+    background-color: #fbfbfb;
+    margin: 1rem auto;
+    border-radius: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .left-display, 
+  .right-display {
+    flex: 0 0 100%; /* Ensure both divs take up 100% width collectively */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
