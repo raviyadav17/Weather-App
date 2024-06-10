@@ -193,7 +193,7 @@ header {
   }
 
   .right-card {
-    width: 85%;
+    width: 90%;
   }
 
   .loading {
@@ -229,7 +229,7 @@ header {
 @media screen and (max-width: 500px) {
   .left-card,
   .right-card {
-    width: 90%;
+    width: 80%;
     min-height: 50vh;
     border-radius: 2rem;
   }
