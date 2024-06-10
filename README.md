@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+To run the Weather App on your local system, make sure you have Node.js installed. You can download it from [here](https://nodejs.org/en/download/). This will give you access to the Node Package Manager (npm), which is essential to run the project.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+1. Open the terminal and navigate to the project directory.
+2. Run: `npm install` to install all the dependencies.
+3. Create a `.env` file at the root of the project directory and add your sensitive API keys:
+4. Run: `npm start` to start the development server.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the Weather App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. System Requirements
 
-### `npm test`
+- Any system with a basic configuration.
+- Operating System: Windows / Linux / Mac.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Software Requirements
 
-### `npm run build`
+- Updated browser.
+- Node.js installed (If not, download it [here](https://nodejs.org/en/download/)).
+- Any text editor of your choice.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. JavaScript (ES6+)
+2. React.js
+3. Axios
+4. RapidAPI
+5. OpenWeatherMap API
+6. HTML, CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
+1. **React**: A JavaScript library for building user interfaces.
+2. **Axios**: A promise-based HTTP client for the browser and Node.js.
+3. **React-Switch**: A customizable switch component for React.
+4. **React-Router-DOM**: Declarative routing for React applications.
+5. **React-Icons**: Popular icons as React components.
+6. **react-async-select**: A flexible and beautiful Select Input control for ReactJS.
+7. **react-loader-spinner**: A lightweight loading spinner component for React.
+8. **dotenv**: A zero-dependency module that loads environment variables from a .env file.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Dark Mode Support**: Toggle between light and dark mode.
+2. **Weather Search**: Users can search for weather information by city name.
+3. **Current Weather Display**: Displays current weather information including temperature, humidity, wind speed, etc.
+4. **5-Day Weather Forecast**: Provides a 5-day weather forecast for the searched city.
+5. **Loading Animation**: Displays a loading spinner while fetching weather data.
+6. **Responsive Design**: Optimized for various screen sizes.

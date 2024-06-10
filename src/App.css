@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+/* Reset default margin and set font family */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Styling for the main wrapper */
+.wrapper {
   min-height: 100vh;
+  min-width: 96vw;
+  text-align: center;
+  padding: 2rem;
+  /* Background gradient */
+  background: linear-gradient(to right, #fcfcfc, #bdb7bb);
+}
+
+/* Styling for the main card container */
+.card {
+  width: 96%;
+  min-height: 100vh;
+  margin: 10px auto;
+  display: flex;
+  background-color: transparent;
+}
+
+/* Styling for the left side of the card */
+.left-card {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  padding: 10px 2rem;
+  border-radius: 2rem 0 0 2rem;
+  box-shadow: -0.5px -0.5px 10px black;
+}
+
+/* Styling for the header of the left side */
+.left-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the body of the left side */
+.left-card-body {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styling for the right side of the card */
+.right-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  background-color: #f0e8e8;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: -0.5px -0.5px 10px black;
+}
+
+/* Styling for the forecast display */
+.forecast-display {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  background-color: #fbfbfb;
+  margin: 1rem auto;
+  border-radius: 20px;
+}
+
+/* Styling for hover effect on forecast display */
+.forecast-display:hover {
+  border: 1px solid black;
+}
+
+/* Styling for each forecast card */
+.card-display {
+  flex: 0 0 11.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0 0.5rem;
+}
+
+/* Styling for the header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Styling for the dark mode toggle switch */
+.toggle-switch {
+  height: 1.5rem;
+}
+
+/* Styling for the weather display */
+.weather-display {
+  width: 100%;
+  display: flex;
+  background-color: #fbfbfb;
+  margin: 1rem auto;
+  border-radius: 20px;
+}
+
+/* Styling for hover effect on weather display */
+.weather-display:hover {
+  border: 1px solid black;
+}
+
+/* Styling for the left side of the weather display */
+.left-display {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Styling for the right side of the weather display */
+.right-display {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Styling for elements inside the right side of weather display */
+.right-display > * {
+  margin: 0;
+  padding: 2px 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Styling for the icon display */
+.icon-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the loading indicator */
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Styling for dark mode */
+.dark-mode {
+  background: linear-gradient(to right, rgb(0, 24, 68), rgb(14, 92, 160));
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for components in dark mode */
+.dark-mode .weather-display {
+  background-color: #6f6e79;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dark-mode .forecast-display {
+  background-color: #6f6e79;
+}
+
+.dark-mode .left-card {
+  box-shadow: -0.5px -0.5px 10px white;
+}
+
+.dark-mode .right-card {
+  background-color: #58575f;
+  box-shadow: -0.5px -0.5px 10px white;
+}
+
+/* Styling for hover effect in dark mode */
+.dark-mode .forecast-display:hover,
+.dark-mode .weather-display:hover {
+  border: 1px solid white;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .left-card,
+  .right-card {
+    width: 80%;
+    min-height: 50vh;
+    border-radius: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .right-card {
+    width: 84%;
+  }
+
+  .loading {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-card {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .left-card-body {
+    height: 60%;
+  }
+
+  .right-card {
+    order: 2;
+  }
+
+  .wrapper {
+    padding: 1rem;
   }
 }
